@@ -26,7 +26,7 @@ function botaoCalculadora(){
 } 
 
 function botaoalert(){
-    alert("olá, bem vindo ao mundo de testes do Gui");
+    alert("olá, bem vindo ao meu mundo, aqui é onde eu faço meus testes na pratica, espero que goste!");
 }
 
 function botaoprompt(){
