@@ -25,9 +25,21 @@ function botaoCalculadora(){
     }
 } 
 
-function botaoalert(){
-    alert("olá, bem vindo ao meu mundo, aqui é onde eu faço meus testes na pratica, espero que goste!");
+
+function botaoPalindromo() {
+    let palavraOuFrase = prompt("Digite uma palavra ou frase para verificar se é um palíndromo:");
+    let palavraLimpa = palavraOuFrase.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+    let palavraInvertida = palavraLimpa.split("").reverse().join("");
+    if (palavraLimpa === palavraInvertida) {
+        alert(`Sim, ${palavraOuFrase} é um palíndromo!`);
+    } else {
+        alert(`Não, ${palavraOuFrase} não é um palíndromo.`);
+    }
 }
+
+//function botaoalert(){
+//    alert("olá, bem vindo ao meu mundo, aqui é onde eu faço meus testes na pratica, espero que goste!");
+//}
 
 function botaoprompt(){
     let nome = prompt("qual é o seu nome?");
@@ -36,7 +48,7 @@ function botaoprompt(){
 
 let informacoes = [
     "A primeira Copa do Mundo aconteceu em 1930, no Uruguai.",
-    "O maior artilheiro da história das Copas é Miroslav Klose, da Alemanha, com 16 gols.",
+    "O maior artilheiro da história das Copas é Kylian Mbappé, da França, com 22 gols.",
     "Apenas 8 países já conquistaram o título mundial masculino: Brasil, Alemanha, Itália, Argentina, França, Uruguai, Inglaterra e Espanha.",
     "A taça atual da Copa pesa cerca de 6,1 kg e é feita de ouro de 18 quilates."
 ];
